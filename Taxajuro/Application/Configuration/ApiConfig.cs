@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Taxajuro.Application.Configuratoin
+namespace Taxajuro.Application.Configuration
 {
     public static class ApiConfig
     {

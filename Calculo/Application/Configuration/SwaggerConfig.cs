@@ -2,8 +2,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Taxajuro.Application.Configuratoin
+namespace Calculo.Application.Configuration
 {
     public static class SwaggerConfig
     {
@@ -13,9 +16,9 @@ namespace Taxajuro.Application.Configuratoin
             {
                 c.SwaggerDoc("v1", new OpenApiInfo()
                 {
-                    Title = "API Juros ",
-                    Description = "Teste api juros",
-                    Contact = new OpenApiContact() { Name = "Ambev", Email = "" },
+                    Title = "API Calculos ",
+                    Description = "Teste api calculos",
+                    Contact = new OpenApiContact() { Name = "Calculo", Email = "" },
                     License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
                 });
 
