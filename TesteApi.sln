@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api.Calculo", "Api.Calculo", "{B4E905A3-137C-430F-B083-1088589A58CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api.TaxaJuro", "Api.TaxaJuro", "{C09C5117-6595-436D-9B30-6A3FEEBD6EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxajuro", "Taxajuro\Taxajuro.csproj", "{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculo", "Calculo\Calculo.csproj", "{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B} = {C09C5117-6595-436D-9B30-6A3FEEBD6EFE}
+		{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55} = {B4E905A3-137C-430F-B083-1088589A58CC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53DA7515-839E-4CA9-A307-EB8CE3E31860}
+	EndGlobalSection
+EndGlobal
