@@ -1,9 +1,12 @@
-﻿using System;
-
-namespace Taxajuro.Application.Classe
+﻿namespace Taxajuro.Application.Classe
 {
     public class Juro
     {
-        public decimal Percentual { get; set; }
+        public double Percentual { get; }
+
+        public Juro()
+        {
+            Percentual = 0.01;
+        }
     }
 }

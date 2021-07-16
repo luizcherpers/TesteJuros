@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Taxajuro.Application.Configuratoin
+namespace Calculo.Application.Configuration
 {
     public static class ApiConfig
     {
@@ -14,9 +14,9 @@ namespace Taxajuro.Application.Configuratoin
             }
             app.UseHttpsRedirection();
 
-            app.UseRouting();
+            app.UseAuthorization();
 
-            app.UseCors("Total");
+            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
