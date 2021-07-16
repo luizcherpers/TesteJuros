@@ -12,7 +12,7 @@ namespace CalcularJurosTests
         [InlineData(200, 5, 210.20)]
         [InlineData(300, 5, 315.30)]
         [InlineData(400, 5, 420.40)]
-        public async void Calcular_Juros_Test(double valorInicial, int tempo, double experado)
+        public async void Calcular_Juros_Test(double valorInicial, int tempo, double esperado)
         {
             //Arrange
             var juros = 0.01;
@@ -24,7 +24,7 @@ namespace CalcularJurosTests
             var result = await mockCalcularJurosService.Calcular(valorInicial, tempo);
 
             //Assert
-            Assert.Equal(experado, result.ValorFinal);
+            Assert.Equal(esperado, result.ValorFinal);
         }
 
         [Theory(DisplayName = "Taxa Juros")]
