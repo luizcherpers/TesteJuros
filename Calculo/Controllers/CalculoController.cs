@@ -24,7 +24,7 @@ namespace Calculo.Controllers
             return response;
         }
 
-        [HttpGet("/ShowMeTheCode")]
+        [HttpGet("/showmethecode")]
         public string GetShowMeTheCode()
         {
             return "https://github.com/luizcherpers/TesteJuros";
