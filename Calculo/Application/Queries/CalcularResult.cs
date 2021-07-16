@@ -3,9 +3,9 @@ namespace Calculo.Application.Queries
 {
     public class CalcularResult
     {
-        public decimal ValorFinal { get;  }
+        public double ValorFinal { get;  }
 
-        public CalcularResult(decimal valorFinal)
+        public CalcularResult(double valorFinal)
         {
             ValorFinal = valorFinal;
         }

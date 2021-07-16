@@ -14,9 +14,9 @@ namespace Calculo.Application.Configuration
             }
             app.UseHttpsRedirection();
 
-            app.UseRouting();
+            app.UseAuthorization();
 
-            app.UseCors("Total");
+            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {

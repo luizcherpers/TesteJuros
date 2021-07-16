@@ -1,4 +1,6 @@
 using Calculo.Application.Configuration;
+using Calculo.Application.Interfaces;
+using Calculo.Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,8 +21,11 @@ namespace Calculo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(Startup));
-            services.AddSwaggerConfiguration();
             services.AddControllers();
+            services.AddSwaggerConfiguration();
+            services.AddHttpClient();
+            services.AddScoped<ICalcularJurosService, CalcularJurosService>();
+            services.AddScoped<IObterTaxaJuros, ObterTaxaJuros>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

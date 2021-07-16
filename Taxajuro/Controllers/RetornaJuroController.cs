@@ -4,13 +4,14 @@ using Taxajuro.Application.Classe;
 
 namespace Taxajuro.Controllers
 {
-    [Route("api/taxa-juro")]
-    public class RetornaJuroController : ControllerBase
+    [ApiController]
+    [Route("[controller]")]
+    public class TaxaJurosController: ControllerBase
     {
-        [HttpGet("juro")]
-        public async Task<Juro> GetJuro()
+        [HttpGet]
+        public async Task<Juro> Get()
         {
-            return await Task.Run(() => new Juro { Percentual = (1M/100M) });
+            return await Task.Run(() => new Juro());
         }
     }
 }

@@ -4,10 +4,10 @@ namespace Calculo.Application.Queries
 {
     public class CalcularRequest: IRequest<CalcularResult>
     {
-        public decimal Valorinicial { get; set; }
+        public double Valorinicial { get; set; }
         public int Tempo { get; set; }
 
-        public CalcularRequest(decimal valorinicial, int tempo)
+        public CalcularRequest(double valorinicial, int tempo)
         {
             Valorinicial = valorinicial;
             Tempo = tempo;

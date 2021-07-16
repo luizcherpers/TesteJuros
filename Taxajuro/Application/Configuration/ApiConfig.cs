@@ -12,11 +12,10 @@ namespace Taxajuro.Application.Configuration
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
 
             app.UseRouting();
-
-            app.UseCors("Total");
 
             app.UseEndpoints(endpoints =>
             {

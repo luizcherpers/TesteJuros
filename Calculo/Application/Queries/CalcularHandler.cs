@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using Calculo.Application.Interfaces;
+using Calculo.Application.Services;
+using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -7,12 +9,16 @@ namespace Calculo.Application.Queries
 {
     public class CalcularHandler : IRequestHandler<CalcularRequest, CalcularResult>
     {
+        private readonly ICalcularJurosService _calcularJurosService;
+
+        public CalcularHandler(ICalcularJurosService calcularJurosService)
+{
+            _calcularJurosService = calcularJurosService;
+        }
+
         public async Task<CalcularResult> Handle(CalcularRequest request, CancellationToken cancellationToken)
         {
-            var v1 = 1 + (1M/100M);
-            var pow = Math.Pow((double)v1, 5);
-            var result = Math.Round((105 * pow), 2);
-            return await Task.Run(() =>  new CalcularResult((decimal)result));
+            return await _calcularJurosService.Calcular(request.Valorinicial, request.Tempo);
         }
     }
 }
