@@ -7,9 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api.Calculo", "Api.Calculo"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api.TaxaJuro", "Api.TaxaJuro", "{C09C5117-6595-436D-9B30-6A3FEEBD6EFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxajuro", "Taxajuro\Taxajuro.csproj", "{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxajuro", "Taxajuro\Taxajuro.csproj", "{FD9C694D-FCF7-43C7-BD84-A3D2AC90F82B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculo", "Calculo\Calculo.csproj", "{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculo", "Calculo\Calculo.csproj", "{61AF9F66-B5D5-4698-8DEF-24B7BBFACF55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6DA63608-7CE3-4593-A7DA-84817BBB91B4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
